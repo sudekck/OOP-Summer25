@@ -21,3 +21,17 @@ print(s1.name)
 print(s1.last_name)
 print(s1.index_number)
 print(s1.nationality)
+
+class Student:
+    def __init__(self,name,last_name,index_number,nationality):
+        self.name=name
+        self.last_name=last_name
+        self.index_number=index_number
+        self.nationality=nationality
+        
+
+s2=Student("ali","cenk",45673,"american")
+print(s2.name)
+print(s2.last_name)
+print(s2.index_number)
+print(s2.nationality)
