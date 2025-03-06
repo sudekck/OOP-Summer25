@@ -22,28 +22,17 @@ print(s1.last_name)
 print(s1.index_number)
 print(s1.nationality)
 
-class Student2:
-    def __init__(self,name,last_name,index_number,nationality):
-        self.name=name
-        self.last_name=last_name
-        self.index_number=index_number
-        self.nationality=nationality
-        
-
-s2=Student2("ali","cenk",45673,"american")
+s2=Student("ali","cenk",45673,"american")
 print(s2.name)
 print(s2.last_name)
 print(s2.index_number)
 print(s2.nationality)
 
-class Student3:
-    def __init__(self,name,last_name,index_number,nationality):
-        self.name=name
-        self.last_name=last_name
-        self.index_number=index_number
-        self.nationality=nationality
-s3=Student3("mark","john",35567,"british")
+s3=Student("mark","john",35567,"british")
 print(s3.name)
 print(s3.last_name)
 print(s3.index_number)
 print(s3.nationality)
+        
+
+
