@@ -4,7 +4,7 @@ student1 ={
     "index_number": "34783",
     "nationality": "Turkish",
     "starting_date": "13/09/2024",
-    "courses": "Basics of Cs"
+    "courses": ["Basics of Cs"]
 }
 print(student1["first_name"])
 print(student1["last_name"])
@@ -35,7 +35,7 @@ student3 ={
     "index_number": "67489",
     "nationality": "American",
     "starting_date": "13/09/2023",
-    "courses": "Basics of Digital Marketing"
+    "courses": ["Basics of Digital Marketing"]
 }
 print(student3["first_name"])
 print(student3["last_name"])
@@ -43,3 +43,4 @@ print(student3["index_number"])
 print(student3["nationality"])
 print(student3["starting_date"])
 print(student3["courses"])
+
