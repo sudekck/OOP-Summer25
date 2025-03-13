@@ -44,3 +44,7 @@ print(student3["nationality"])
 print(student3["starting_date"])
 print(student3["courses"])
 
+def add_new_students(first_name, last_name, index_number, nationality, starting_date, courses):
+    student = {'first_name': first_name, 'last_name': last_name, 'index_number':index_number, 'nationality':nationality, 'starting_date':starting_date,'courses':courses}
+    students.append(student)
+    print(first_name + " " + last_name + " " + index_number + " " + nationality + " " + starting_date + " " + courses)
