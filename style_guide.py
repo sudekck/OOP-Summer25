@@ -62,3 +62,99 @@ total = (
     var3 + \
 )
 
+#Fourth Rule: Naming Conventions
+#Variables and functions use only underscores with lower case
+def sum_ages():
+    ages_total = 55     #Correct
+
+def SumAges():
+    AgesTotal = 55      #Wrong(PascalCase not used for functions or variables)
+
+#Classes use capitalized words
+class StudentDetails:
+    pass                #Correct              
+
+class student_details:
+    pass                #Wrong(Class names should be in PascalCase)
+
+
+#Fifth Rule: Whitespace
+#No spaces before commas, colons, or semicolons
+#Always put one space after a comma
+x = 5
+y = x + 2               #Correct
+print(x, y)
+
+x=5
+y=x+2
+print( x , y )          #Wrong(Too many unnecessary spaces)
+
+
+#Sixth Rule: Comments
+#Use complete sentences
+#For Block comments, use them above code blocks, indented to the same level
+#For Inline comments, use sparingly, and start with a # and a space
+#This function greets the user
+def greet():
+    print("Hello!")     #Correct
+
+def greet(): #greet
+    print("Hello!") #hello  #Wrong
+
+
+#Seventh Rule: Docstrings
+#For Docstrings, use triple quotes """ for module, class, and function documentation
+def add(x, y):
+    """Returns the sum of x and y."""       #Correct
+    return x + y
+
+def add(x, y):
+    #Adds two numbers           #Wrong
+    return x + y
+
+
+#Eighth Rule: Comparing to None
+#Since is checks the identity, it checks if two variables refer to the exact same object
+# == checks for value equality, which can be overrideden with custom logic and also can give unexpected result
+if result is None:
+    print("No result")      #Correct
+
+if result == None:
+    print("No result")      #Wrong
+
+
+#Nineth Rule: Exception Handling
+#It allows us to deal with errors that occur during runtime
+#Lİke; Dividing by Zero, Accessing a missing file, Calling a function with invalid input
+try:
+    value = 10 / 0
+except ZeroDivisionError:           #Correct
+    print("Cannot divide by zero")
+
+try:
+    value = 10 / 0
+except:                     
+    print("Error")                  #Wrong(Too broad, catches everything)
+
+
+#Tenth Rule: Lambda Usage
+#It is used when you need a simple function for a short period of time, usually as an argument to another function
+#It is not suitable for complicated function like mathematical problems
+def square(x):              #Correct
+    return x * x
+
+square = lambda x: x * x    #Wrong(Avoid for anything more than a simple one-liner)
+
+
+#Eleventh Rule: Main Function Block(Extra)
+#Some Python files can be run directly, or imported into other files
+#So it ensures that some code only runs when the file is executed directly, not when it's imported
+#It keeps the code clean and modular
+#Makes the script safe to import without running everything
+def main():
+    print("Hello!")
+                                #Correct
+if __name__ == "__main__":
+    main()
+
+print("Hello!")     #Wrong(No main function structure)
